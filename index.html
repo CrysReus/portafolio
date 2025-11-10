@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristian Hernández — Portfolio Friki</title>
+<style>
+:root{--accent:#0aff94;--bg:#0d0d0d;--card:#1a1a1a;--text:#f0f0f0;--muted:#888;--maxw:960px}
+*{box-sizing:border-box}
+body{font-family:'Fira Code', monospace; margin:0; background:var(--bg); color:var(--text)}
+a{color:var(--accent); text-decoration:none}
+.container{max-width:var(--maxw); margin:28px auto; padding:24px}
+header{display:flex;gap:18px;align-items:center}
+.avatar{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#0affd4);display:flex;align-items:center;justify-content:center;color:black;font-weight:700;font-size:28px}
+h1{margin:0;font-size:32px;color:var(--accent)}
+.sub{color:var(--muted);margin-top:6px;font-style:italic}
+.row{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+@media(max-width:880px){.row{grid-template-columns:1fr}.side{order:2}}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,255,200,0.2)}
+.section{margin-bottom:16px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:#222;padding:6px 10px;border-radius:8px;font-size:13px;color:var(--accent);font-family:'Fira Code', monospace}
+.projects{display:grid;gap:12px}
+.project{display:flex;gap:12px;align-items:flex-start}
+.proj-thumb{width:120px;height:80px;background:#111;border-radius:8px;flex:0 0 120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:'Fira Code', monospace}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:black;font-weight:600;font-family:'Fira Code', monospace}
+footer{margin-top:20px;text-align:center;color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse}
+td,th{padding:6px 8px;border-bottom:1px solid #222}
+.meta{font-size:14px;color:var(--muted);font-family:'Fira Code', monospace}
+.certs{display:flex;flex-direction:column;gap:6px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:520px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="avatar">CH</div>
+<div>
+<h1>Cristian Hernández</h1>
+<div class="sub">Code Ninja · Desarrollador web DAW · Técnico de Networking</div>
+<div class="meta" style="margin-top:8px">📧 redesedh@outlook.com · 📞 643 515 049 · 🚗 Vehículo propio</div>
+<div style="margin-top:8px"><a class="btn" href="CV_Cristian_Hernandez_DAW.pdf" download>Descargar CV</a> <a class="btn" href="#contact" style="background:#111;color:var(--accent)">Contactar</a></div>
+</div>
+</header>
+<div class="row">
+<main>
+<div class="card section">
+<h2 style="margin:0 0 8px 0">Sobre mí</h2>
+<p class="meta">Desarrollador web en formación con experiencia como técnico de networking. Me apasiona escribir código limpio, resolver bugs como si fueran jefes finales y siempre aprender nuevas tecnologías.</p>
+</div>
+<div class="card section">
+<h3 style="margin-top:0">Proyectos destacados</h3>
+<div class="projects">
+<article class="project">
+<div class="proj-thumb">PHP</div>
+<div>
+<strong>Agenda de Contactos de Clientes</strong>
+<div class="meta">Aplicación interna (PHP + MySQL) — CRUD, autenticación y roles. <a href="#">GitHub</a></div>
+</div>
+</article>
+<article class="project">
+<div class="proj-thumb">MON</div>
+<div>
+<strong>Sistema de Monitorización de Servidores</strong>
+<div class="meta">Monitorización de equipos y espacio en disco, alertas automáticas. <a href="#">GitHub</a></div>
+</div>
+</article>
+</div>
+</div>
+<div class="card section">
+<h3 style="margin-top:0">Experiencia</h3>
+<p><strong>Técnico de Networking — Grupo TRC</strong> (2023 - Actualidad)</p>
+<ul class="meta">
+<li>Administración y soporte de redes LAN/WAN</li>
+<li>Configuración y mantenimiento de routers y switches MikroTik & Fortinet</li>
+<li>Resolución de incidencias como quests</li>
+</ul>
+</div>
+</main>
+<aside class="side">
+<div class="card section">
+<h4 style="margin:0 0 8px 0">Habilidades</h4>
+<div class="skills">
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">PHP</span>
+<span class="skill">Python</span>
+<span class="skill">MySQL / MariaDB</span>
+<span class="skill">Git / GitHub</span>
+<span class="skill">Linux</span>
+<span class="skill">MikroTik</span>
+<span class="skill">Fortinet</span>
+</div>
+</div>
+<div class="card section">
+<h4 style="margin:0 0 8px 0">Formación & Certificados</h4>
+<div class="certs">
+<div><strong>DAW</strong> — Universidad Alfonso X El Sabio (UAX)</div>
+<div><strong>ASIR</strong> — Grado Superior</div>
+<div>Certified Technology Expert Self-Hosted L1/L2 • MTCNA • Linux Essentials • Fortinet NSE 1 • HPS</div>
+</div>
+</div>
+<div class="card section">
+<h4 style="margin:0 0 8px 0">Idiomas</h4>
+<div class="meta">Inglés — B1 (puedo leer docs de StackOverflow sin traductor)</div>
+</div>
+<div class="card section">
+<h4 style="margin:0 0 8px 0">Contacto rápido</h4>
+<div class="contact-grid">
+<a href="mailto:redesedh@outlook.com" class="btn">Enviar email</a>
+<a href="https://www.linkedin.com/in/cristian-hernandez-167754265/" class="btn" style="background:#111;color:var(--accent)">LinkedIn</a>
+</div>
+</div>
+<div class="card section">
+<h4 style="margin:0 0 8px 0">Intereses</h4>
+<div class="meta">Música (batería), ciclismo, senderismo y siempre en búsqueda de quests de código.</div>
+</div>
+</aside>
+</div>
+<footer id="contact">
+<div class="card" style="margin-top:18px">
+<h4 style="margin:0 0 8px 0">CV (PDF)</h4>
+<p class="meta">Descarga tu CV: <a href="CV_Cristian_Hernandez_DAW.pdf" download>CV_Cristian_Hernandez.pdf</a></p>
+</div>
+<div style="height:14px"></div>
+<div class="meta">© Cristian Hernández — Portfolio Friki · Hecho con HTML/CSS · Incluye CV</div>
+</footer>
+</div>
+</body>
+</html>
